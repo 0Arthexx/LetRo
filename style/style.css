@@ -1,138 +1,161 @@
 /*Button Menu  */
 /* From uiverse.io by @gagan-gv */
 .btn1 {
-width: 120px;
-height: 40px;
-border-radius: 5px;
-border: none;
-transition: all 0.5s ease-in-out;
-font-size: 15px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-weight: 600;
-display: flex;
-align-items: center;
-background: #ffffff;
-color: black;
+   width: 120px;
+   height: 40px;
+   border-radius: 5px;
+   border: none;
+   transition: all 0.5s ease-in-out;
+   font-size: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   background: #ffffff;
+   color: black;
 }
 
 .btn1:hover {
-box-shadow: 0 0 20px 0px #2e2e2e3a;
+   box-shadow: 0 0 20px 0px #2e2e2e3a;
 }
 
 .btn1 .icon1 {
-position: absolute;
-height: 40px;
-width: 70px;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.5s;
+   position: absolute;
+   height: 40px;
+   width: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s;
 }
 
 .btn1 .text1 {
-transform: translateX(45px);
+   transform: translateX(45px);
 }
 
 .btn1:hover .icon1 {
-width: 130px;
+   width: 130px;
 }
 
 .btn1:hover .text1 {
-transition: all 0.5s;
-opacity: 0;
+   transition: all 0.5s;
+   opacity: 0;
 }
 
 .btn1:focus {
-outline: none;
+   outline: none;
 }
 
 .btn1:active .icon1 {
-transform: scale(0.85);
+   transform: scale(0.85);
 }
 
 /* search bar */
 
-
- /* From uiverse.io by @satyamchaudharydev */
+/* From uiverse.io by @satyamchaudharydev */
 /* From uiverse.io by @satyamchaudharydev */
 /* removing default style of button */
 
 .form1 button {
-  border: none;
-  background: none;
-  color: #8b8ba7;
+   border: none;
+   background: none;
+   color: #8b8ba7;
 }
 /* styling of whole input container */
 .form1 {
-  --timing: 0.3s;
-  --width-of-input: 200px;
-  --height-of-input: 40px;
-  --border-height: 2px;
-  --input-bg: #fff;
-  --border-color: green;
-  --border-radius: 30px;
-  --after-border-radius: 1px;
-  position: relative;
-  width: var(--width-of-input);
-  height: var(--height-of-input);
-  display: flex;
-  align-items: center;
-  padding-inline: 0.8em;
-  border-radius: var(--border-radius);
-  transition: border-radius 0.5s ease;
-  background: var(--input-bg,#fff);
+   --timing: 0.3s;
+   --width-of-input: 200px;
+   --height-of-input: 40px;
+   --border-height: 2px;
+   --input-bg: #fff;
+   --border-color: green;
+   --border-radius: 30px;
+   --after-border-radius: 1px;
+   position: relative;
+   width: var(--width-of-input);
+   height: var(--height-of-input);
+   display: flex;
+   align-items: center;
+   padding-inline: 0.8em;
+   border-radius: var(--border-radius);
+   transition: border-radius 0.5s ease;
+   background: var(--input-bg, #fff);
 }
 /* styling of Input */
 .input {
-  font-size: 0.9rem;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  padding-inline: 0.5em;
-  padding-block: 0.7em;
-  border: none;
+   font-size: 0.9rem;
+   background-color: transparent;
+   width: 100%;
+   height: 100%;
+   padding-inline: 0.5em;
+   padding-block: 0.7em;
+   border: none;
 }
 /* styling of animated border */
 .form1:before {
-  content: "";
-  position: absolute;
-  background: var(--border-color);
-  transform: scaleX(0);
-  transform-origin: center;
-  width: 100%;
-  height: var(--border-height);
-  left: 0;
-  bottom: 0;
-  border-radius: 1px;
-  transition: transform var(--timing) ease;
+   content: '';
+   position: absolute;
+   background: var(--border-color);
+   transform: scaleX(0);
+   transform-origin: center;
+   width: 100%;
+   height: var(--border-height);
+   left: 0;
+   bottom: 0;
+   border-radius: 1px;
+   transition: transform var(--timing) ease;
 }
 /* Hover on Input */
 .form1:focus-within {
-  border-radius: var(--after-border-radius);
+   border-radius: var(--after-border-radius);
 }
 
 input:focus {
-  outline: none;
+   outline: none;
 }
 /* here is code of animated border */
 .form1:focus-within:before {
-  transform: scale(1);
+   transform: scale(1);
 }
 /* styling of close button */
 /* == you can click the close button to remove text == */
 .reset {
-  border: none;
-  background: none;
-  opacity: 0;
-  visibility: hidden;
+   border: none;
+   background: none;
+   opacity: 0;
+   visibility: hidden;
 }
 /* close button shown when typing */
 input:not(:placeholder-shown) ~ .reset {
-  opacity: 1;
-  visibility: visible;
+   opacity: 1;
+   visibility: visible;
 }
 /* sizing svg icons */
 .form1 svg {
-  width: 17px;
-  margin-top: 3px;
+   width: 17px;
+   margin-top: 3px;
+}
+
+/* ****************** */
+/* SECTION HERO */
+/* ****************** */
+
+.section-hero {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.section-hero img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   pointer-events: none;
 }
