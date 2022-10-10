@@ -1,68 +1,18 @@
-.sidenav1 {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
-
-/* The navigation menu links */
-.sidenav1 a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav1 a:hover {
-color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav1 .closebtn1 {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-} 
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main1 {
-transition: margin-left .5s;
-padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-.sidenav1 {padding-top: 15px;}
-.sidenav1 a {font-size: 18px;}
-}
-
-
 /*Button Menu  */
 /* From uiverse.io by @gagan-gv */
 .btn1 {
-width: 150px;
-height: 50px;
+width: 120px;
+height: 40px;
 border-radius: 5px;
 border: none;
 transition: all 0.5s ease-in-out;
-font-size: 20px;
+font-size: 15px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight: 600;
 display: flex;
 align-items: center;
-background: #040f16;
-color: #f5f5f5;
+background: #ffffff;
+color: black;
 }
 
 .btn1:hover {
@@ -80,11 +30,11 @@ transition: all 0.5s;
 }
 
 .btn1 .text1 {
-transform: translateX(55px);
+transform: translateX(45px);
 }
 
 .btn1:hover .icon1 {
-width: 175px;
+width: 130px;
 }
 
 .btn1:hover .text1 {
@@ -101,52 +51,88 @@ transform: scale(0.85);
 }
 
 /* search bar */
-/* From uiverse.io by @alexruix */
-.group {
-  display: flex;
-  line-height: 28px;
-  align-items: center;
+
+
+ /* From uiverse.io by @satyamchaudharydev */
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form1 button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form1 {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: green;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
   position: relative;
-  max-width: 190px;
-  
- }
- 
- .input {
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
   width: 100%;
-  height: 40px;
-  line-height: 28px;
-  padding: 0 1rem;
-  padding-left: 2.5rem;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  background-color: #f3f3f4;
-  color: green;
-  background-color: black;
-  transition: .3s ease;
- }
- 
- .input::placeholder {
-  color: white;
- }
- 
- .input:focus, input:hover {
-  outline: none;
-  border-color: rgba(234,76,137,0.4);
-  background-color: #fff;
-  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
- }
- 
- .icon {
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form1:before {
+  content: "";
   position: absolute;
-  left: 1rem;
-  fill: #9e9ea7;
-  width: 1rem;
-  height: 1rem;
- }
- 
- 
- 
- 
- 
- 
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form1:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form1:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form1 svg {
+  width: 17px;
+  margin-top: 3px;
+}
