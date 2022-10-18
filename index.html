@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LeTra</title>
+  <title>LetRo</title>
   <!-- Link CSS Ext -->
   <link rel="stylesheet" href="./style/style.css">
   <!-- BOOTSTRAP -->
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 </head>
 <body >
-  <nav class="navbar navbar-expand-lg bg-dark ">
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand text-light ms-5 fs-2 judul" href="#">LetRo</a>
       
@@ -30,13 +30,13 @@
             <a class="nav-link active text-light fs-5 hover-underline-animation" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item cta">
-            <a class="nav-link text-light fs-5 hover-underline-animation" href="#">Things To Do</a>
+            <a class="nav-link text-light fs-5 hover-underline-animation" href="#TTD">Things To Do</a>
           </li>
           <li class="nav-item cta">
-            <a class="nav-link disabled text-light fs-5 hover-underline-animation">Plan Trip</a>
+            <a class="nav-link text-light fs-5 hover-underline-animation" href="#PTR">Plan Trip</a>
           </li>
           <li class="nav-item cta">
-            <a class="nav-link disabled text-light fs-5 hover-underline-animation">Search Destination</a>
+            <a class="nav-link text-light fs-5 hover-underline-animation" href="#SD">Search Destination</a>
           </li>
         </ul>
 
@@ -48,9 +48,14 @@
     <p class="fs-1 judul" align="center"> <b>LetRo </b> <br>Lets Rove</p>
   </div> -->
 
+  <div class="box">
+    <p class="judul" align="center"> <b>LetRo </b> <br><br>Lets Rove</p>
+  </div>
+
+
 
   <section class="section-hero" >
-    <img src="img/1.png" alt="background" id="background">
+    <!-- <img src="img/1.png" alt="background" id="background"> -->
     <img src="img/2.png" alt="gunung biru" id="gunung">
     <img src="img/3.png" alt="daun hijau muda" id="daun1">
     <img src="img/4.png" alt="daun hijau tua" id="daun2">
@@ -58,128 +63,226 @@
     <img src="img/6.png" alt="buwong" id="buwong">
   </section>
 
-  <div style="background-color: #141819; padding-bottom: 50px; padding-top: 100px;" >
-    <h1 align="center" class="text-light" style="font-family: 'Sriracha', cursive; font-size: 5em;"> Things To Do </h1>
+  <a href="#LMD">
+    <button class="buttons" href="">
+      
+      <div class="text divs" >
+          <span style="font-size: 2em;"> <b><i>Learn</i></b> </span>
+          <span style="font-size: 2em;"> More </span>
+          <!-- <span>top</span> -->
+      </div>
+      <div class="clone divs">
+          <span style="font-size: 2em;"> <i>Move</i> </span>
+          <span style="font-size: 2em;"> <i><b>Down</b></i> </span>
+          <!-- <span>top</span> -->
+      </div>
+  
+      <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 svgs" fill="black" viewBox="0 -12 25 25" stroke="currentColor" stroke-width="3" >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+  </button >
+</a>
 
-    <div class="container card1 mt-5">
-      <p class="accordion-header" id="headingOne">
+<!-- <p id="LMD" style="background-color: #141819; opacity: 0%;"></p> -->
 
-        <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          <button class="cta11">
-            <span class="hover-underline-animation11"> SET DESTINATION </span>
-            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                <path transform="translate(30)" class="changecolor" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-            </svg>
-          </button>
-          </span>
+  <div style="background-color: #141819; padding-bottom: 50px; padding-top: 100px;" id="LMD">
+    <h1 align="center" class="text-light" style="font-family: 'Sriracha', cursive; font-size: 5em;"> About Page </h1>
+    
 
-      </p>
-      <p class="accordion-header" id="flush-headingTwo">
+    <div class="cardd1">
+      <div class="toolss1">
+        <div class="circlee1">
+          <span class="redd1 boxx1"></span>
+        </div>
+        <div class="circlee1">
+          <span class="yelloww1 boxx1"></span>
+        </div>
+        <div class="circlee1">
+          <span class="greenn1 boxx1"></span>
+        </div>
+      </div>
+      <div class="card__contentt1" >
+        <h4 class="text-light ms-5 me-5" align="center">LetRo is a website used for travel, This site discusses travel reviews, trip price details. and we offer features that you can use to make your trip easier and more enjoyable.</h4>
+      </div>
 
-        <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          <button class="cta11">
-            <span class="hover-underline-animation11"> FIT AND HEALTHY </span>
-              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                <path transform="translate(30)" class="changecolor" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-              </svg>
-            </button>
-          </span>
-
-      </p>
-      <p class="accordion-header" id="flush-headingThree">
-
-        <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          <button class="cta11">
-            <span class="hover-underline-animation11"> NECESSARY ITEMS </span>
-              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                <path transform="translate(30)" class="changecolor" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-              </svg>
-            </button>
-          </span>
-
-      </p>
-    </div>
-
-    <div class="container ">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item ttd">
-
-          <div id="flush-collapseOne" class="accordion-collapse collapse ttd" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-
-            <div class="accordion-body">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col" class="border-0 pb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A6D6E3" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                    </svg>
-                  </th>
-                  <th scope="col " class="txt border-0">
-                    Before traveling, do a little research on the places you will be visiting. Find out what kind of weather to expect. Is it damp? Is it hot? How about the height? Do some research about where you are going to live. You can check out vacation travel reviews and guides for the best travel tips in the area on our website.
-                  </th>
-                </tr>
-              </thead>
-            </table>
+      <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="cardi1 m-auto">
+              <h3 class="card__titlei1"> Things To Do
+              </h3>
+              <p class="card__contenti1">this feature is useful for telling things to do before going on a trip</p>
+              <div class="card__datei1 opacity-0">
+                April 15, 2022
             </div>
-
-          </div>
-        </div>
-        <div class="accordion-item ttd">
-          <div id="flush-collapseTwo" class="accordion-collapse collapse ttd" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-
-            <div class="accordion-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" class="border-0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A6D6E3" class="bi bi-bandaid" viewBox="0 0 16 16">
-                        <path d="M14.121 1.879a3 3 0 0 0-4.242 0L8.733 3.026l4.261 4.26 1.127-1.165a3 3 0 0 0 0-4.242ZM12.293 8 8.027 3.734 3.738 8.031 8 12.293 12.293 8Zm-5.006 4.994L3.03 8.737 1.879 9.88a3 3 0 0 0 4.241 4.24l.006-.006 1.16-1.121ZM2.679 7.676l6.492-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Z"/>
-                        <path d="M5.56 7.646a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708Zm1.415-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707ZM8.39 4.818a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707Zm0 5.657a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707ZM9.803 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707Zm1.414-1.414a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708ZM6.975 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707ZM8.39 7.646a.5.5 0 1 1-.708.708.5.5 0 0 1 .707-.708Zm1.413-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707Z"/>
-                      </svg>
-
-                    </th>
-                    <th scope="col " class="txt border-0">
-                      The important thing is to remember to prepare yourself in advance to keep your health in shape so you can relax and enjoy your trip no matter what. With our tips for preparing for a trip abroad, all you have to do is pack your travel essentials, make a reservation, and get ready for the best travel experience.
-                    </th>
-                  </tr>
-                </thead>
-              </table>
+              <div class="card__arrowi1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                      <path fill="black" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z" class="pilblwhi"></path>
+                  </svg>
               </div>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item ttd">
-          <div id="flush-collapseThree" class="accordion-collapse collapse ttd" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-
-            <div class="accordion-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" class="border-0 pb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A6D6E3" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-                      </svg>
-
-                    </th>
-                    <th scope="col " class="txt border-0">
-                      Yes, this is technically legal advice, but being prepared will help you avoid unwanted situations while traveling. Stranded in a new city with no money and no identity is every traveler's worst nightmare. Make sure you bring your important documents, including your passport, driver's license, social security card, credit card, insurance card, and an extra set of clothes. Travelers' checks are also good to have in case your card is lost or stolen.
-                    </th>
-                  </tr>
-                </thead>
-              </table>
+          <div class="col">
+            <div class="cardi1 m-auto">
+              <h3 class="card__titlei1">Plan Trip
+              </h3>
+              <p class="card__contenti1">This feature is useful for planning your trip so that your trip feels safe and comfortable</p>
+              <div class="card__arrowi1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                      <path fill="black" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z" class="pilblwhi"></path>
+                  </svg>
               </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="cardi1 m-auto">
+              <h3 class="card__titlei1">Search Destination
+              </h3>
+              <p class="card__contenti1">Before going on a trip you can do a search for the place you want to go first</p>
+              <div class="card__arrowi1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                      <path fill="black" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z" class="pilblwhi"></path>
+                  </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    
+
   </div>
 
+
+  
+
   <div>
-
     <img src="./img/caveup.png" width="100%" alt="" srcset="" >
+    <p id="TTD" style="opacity: 0%;"></p>
+    <div style="padding-bottom: 50px; padding-top: 100px;">
+      <h1 align="center" style="font-family: 'Sriracha', cursive; font-size: 5em;" > Things To Do </h1>
+  
+      <div class="container card1 mt-5">
+        <p class="accordion-header" id="headingOne">
+  
+          <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="cta11">
+              <span class="hover-underline-animation11"> SET DESTINATION </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                  <path transform="translate(30)" class="changecolor" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+            </span>
+  
+        </p>
+        <p class="accordion-header" id="flush-headingTwo">
+  
+          <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <button class="cta11">
+              <span class="hover-underline-animation11"> FIT AND HEALTHY </span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                  <path transform="translate(30)" class="changecolor" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                </svg>
+              </button>
+            </span>
+  
+        </p>
+        <p class="accordion-header" id="flush-headingThree">
+  
+          <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button class="cta11">
+              <span class="hover-underline-animation11"> NECESSARY ITEMS </span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                  <path transform="translate(30)" class="changecolor" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                </svg>
+              </button>
+            </span>
+  
+        </p>
+      </div>
+  
+      <div class="container ">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item ttd">
+  
+            <div id="flush-collapseOne" class="accordion-collapse collapse ttd" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+  
+              <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="border-0 pb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A6D6E3" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg>
+                    </th>
+                    <th scope="col " class="txt border-0">
+                      Before traveling, do a little research on the places you will be visiting. Find out what kind of weather to expect. Is it damp? Is it hot? How about the height? Do some research about where you are going to live. You can check out vacation travel reviews and guides for the best travel tips in the area on our website.
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+              </div>
+  
+            </div>
+          </div>
+          <div class="accordion-item ttd">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse ttd" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+  
+              <div class="accordion-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A6D6E3" class="bi bi-bandaid" viewBox="0 0 16 16">
+                          <path d="M14.121 1.879a3 3 0 0 0-4.242 0L8.733 3.026l4.261 4.26 1.127-1.165a3 3 0 0 0 0-4.242ZM12.293 8 8.027 3.734 3.738 8.031 8 12.293 12.293 8Zm-5.006 4.994L3.03 8.737 1.879 9.88a3 3 0 0 0 4.241 4.24l.006-.006 1.16-1.121ZM2.679 7.676l6.492-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Z"/>
+                          <path d="M5.56 7.646a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708Zm1.415-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707ZM8.39 4.818a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707Zm0 5.657a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707ZM9.803 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707Zm1.414-1.414a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708ZM6.975 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707ZM8.39 7.646a.5.5 0 1 1-.708.708.5.5 0 0 1 .707-.708Zm1.413-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707Z"/>
+                        </svg>
+  
+                      </th>
+                      <th scope="col " class="txt border-0">
+                        The important thing is to remember to prepare yourself in advance to keep your health in shape so you can relax and enjoy your trip no matter what. With our tips for preparing for a trip abroad, all you have to do is pack your travel essentials, make a reservation, and get ready for the best travel experience.
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+                </div>
+            </div>
+          </div>
+          <div class="accordion-item ttd">
+            <div id="flush-collapseThree" class="accordion-collapse collapse ttd" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+  
+              <div class="accordion-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A6D6E3" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                        </svg>
+  
+                      </th>
+                      <th scope="col " class="txt border-0">
+                        Yes, this is technically legal advice, but being prepared will help you avoid unwanted situations while traveling. Stranded in a new city with no money and no identity is every traveler's worst nightmare. Make sure you bring your important documents, including your passport, driver's license, social security card, credit card, insurance card, and an extra set of clothes. Travelers' checks are also good to have in case your card is lost or stolen.
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    
 
-    <h1 align="center" class="text-dark" style="font-family: 'Sriracha', cursive; font-size: 7em;"> Plan Trip </h1>
+    <img src="./img/cavedown.png" width="100%" alt="" srcset="">
+  </div >
+  <div style="height: 100px; background-color: #141819;" id="PTR"></div>
+  <div style="background-color: #141819;">
+    <h1 align="center" class="text-light" style="font-family: 'Sriracha', cursive; font-size: 7em;" > Plan Trip </h1>
 
     <div class="container mt-5">
       <div class="row row-cols-md-5 g-4">
@@ -228,26 +331,23 @@
       </div>
 
     </div>
-    
-
-    <img src="./img/cavedown.png" width="100%" alt="" srcset="">
   </div>
-
 
   <div class="beach"></div>
   <div class="cavedown"></div>
 
-  <div style="background-color: #141819; padding-bottom: 50px; padding-top: 100px;" >
-    <h1 align="center" class="text-light" style="font-family: 'Sriracha', cursive;"> Search Destination </h1>
-    <div class="inputbox m-auto w-50">
-      <input required="required" type="text">
-      <span>Search</span>
-      <i></i>
-    </div>
-  </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#141819" fill-opacity="1" d="M0,256L9.6,224C19.2,192,38,128,58,133.3C76.8,139,96,213,115,250.7C134.4,288,154,288,173,250.7C192,213,211,139,230,138.7C249.6,139,269,213,288,234.7C307.2,256,326,224,346,181.3C364.8,139,384,85,403,90.7C422.4,96,442,160,461,176C480,192,499,160,518,160C537.6,160,557,192,576,197.3C595.2,203,614,181,634,149.3C652.8,117,672,75,691,96C710.4,117,730,203,749,229.3C768,256,787,224,806,224C825.6,224,845,256,864,277.3C883.2,299,902,309,922,293.3C940.8,277,960,235,979,218.7C998.4,203,1018,213,1037,202.7C1056,192,1075,160,1094,165.3C1113.6,171,1133,213,1152,218.7C1171.2,224,1190,192,1210,197.3C1228.8,203,1248,245,1267,234.7C1286.4,224,1306,160,1325,138.7C1344,117,1363,139,1382,170.7C1401.6,203,1421,245,1430,266.7L1440,288L1440,0L1430.4,0C1420.8,0,1402,0,1382,0C1363.2,0,1344,0,1325,0C1305.6,0,1286,0,1267,0C1248,0,1229,0,1210,0C1190.4,0,1171,0,1152,0C1132.8,0,1114,0,1094,0C1075.2,0,1056,0,1037,0C1017.6,0,998,0,979,0C960,0,941,0,922,0C902.4,0,883,0,864,0C844.8,0,826,0,806,0C787.2,0,768,0,749,0C729.6,0,710,0,691,0C672,0,653,0,634,0C614.4,0,595,0,576,0C556.8,0,538,0,518,0C499.2,0,480,0,461,0C441.6,0,422,0,403,0C384,0,365,0,346,0C326.4,0,307,0,288,0C268.8,0,250,0,230,0C211.2,0,192,0,173,0C153.6,0,134,0,115,0C96,0,77,0,58,0C38.4,0,19,0,10,0L0,0Z"></path></svg>
 
-  <div class="container">
+  <div class="container" id="SD">
+    <div style="padding-bottom: 50px; padding-top: 100px;" >
+      <h1 align="center" class="text-dark" style="font-family: 'Sriracha', cursive;"> Search Destination </h1>
+      <div class="inputbox m-auto w-50">
+        <input required="required" type="text">
+        <span>Search</span>
+        <i></i>
+      </div>
+    </div>
+
     <div class="row row-cols-md-5 g-4">
       <div class="col">
 
@@ -382,3 +482,4 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
+
