@@ -15,5 +15,4 @@ window.addEventListener('scroll', function () {
    daun2.style.top = `${value * 0.4}px`;
    daun3.style.top = `${value * 0}px`;
    buwong.style.left = `${value * 1.05}px`;
-   console.log(value);
 });
