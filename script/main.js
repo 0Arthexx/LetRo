@@ -20,170 +20,144 @@ window.addEventListener('scroll', function () {
 var data = [
    {
       country: 'Indonesia',
-      island: 'Jawa Barat',
+      island: 'Nusa Tenggara Barat',
       city: 'Subang',
       name: 'Gili Trawangan',
-
-      make: 'Indonesia',
-      model: 'Nusa Tenggara Barat',
-      type: 'Subang',
-      price: 'Gili Trawangan',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318622514810931/10.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Sumatera',
-      type: 'Electric',
-      price: 'Ngarai Sianok',
+      country: 'Indonesia',
+      island: 'Sumatera',
+      city: 'Electric',
+      name: 'Ngarai Sianok',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318622841962496/8.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Sulawesi Selatan',
-      type: 'Electric',
-      price: 'Toraja',
+      country: 'Indonesia',
+      island: 'Sulawesi Selatan',
+      city: 'Electric',
+      name: 'Toraja',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318623198498896/9.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Nusa Tenggara Barat',
-      type: 'Electric',
-      price: 'Rinjani',
+      country: 'Indonesia',
+      island: 'Nusa Tenggara Barat',
+      city: 'Electric',
+      name: 'Rinjani',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318623584366611/61.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Sumatera',
-      type: 'Electric',
-      price: 'Danau Toba',
+      country: 'Indonesia',
+      island: 'Sumatera',
+      city: 'Electric',
+      name: 'Danau Toba',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318623907315762/7.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Nusa Tenggara Barat',
-      type: 'Acoustic',
-      price: 'Lombok',
+      country: 'Indonesia',
+      island: 'Nusa Tenggara Barat',
+      city: 'Acoustic',
+      name: 'Lombok',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318624297402440/41.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Jawa Timur',
-      type: 'Acoustic',
-      price: 'Bromo',
+      country: 'Indonesia',
+      island: 'Jawa Timur',
+      city: 'Acoustic',
+      name: 'Bromo',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318624708431892/51.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Nusa Tenggara Timur',
-      type: 'Acoustic',
-      price: 'Taman Komodo',
+      country: 'Indonesia',
+      island: 'Nusa Tenggara Timur',
+      city: 'Acoustic',
+      name: 'Taman Komodo',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318625090117692/21.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Papua Barat',
-      type: 'Acoustic',
-      price: 'Raja Ampat',
+      country: 'Indonesia',
+      island: 'Papua Barat',
+      city: 'Acoustic',
+      name: 'Raja Ampat',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318625463418910/31.png',
       url: 'https://google.com',
    },
    {
-      make: 'Indonesia',
-      model: 'Bali',
-      type: 'Acoustic',
-      price: 'Bali',
+      country: 'Indonesia',
+      island: 'Bali',
+      city: 'Acoustic',
+      name: 'Bali',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318625819922574/11.png',
       url: 'https://google.com',
    },
 ];
 
 var products = '',
-   makes = '',
-   models = '',
-   types = '';
+   countrys = '',
+   islands = '',
+   citys = '';
 
 for (var i = 0; i < data.length; i++) {
-   var make = data[i].make,
-      model = data[i].model,
-      type = data[i].type,
-      price = data[i].price,
+   var country = data[i].country,
+      island = data[i].island,
+      city = data[i].city,
+      name = data[i].name,
       url = data[i].url,
-      rawPrice = price.replace('$', ''),
-      rawPrice = parseInt(rawPrice.replace(',', '')),
+      rawname = name.replace('$', ''),
+      rawname = parseInt(rawname.replace(',', '')),
       image = data[i].image;
 
-   //create product cards
-   // <div class="cardca1">
-   //  <div class="card-imga1"></div>
-   //   <div class="card-infoa1">
-   //     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z"   fill="none"></path><path d="M4.828 21l-.02.02-.021-.02H2.992A.993.993 0 0 1 2 20.007V3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H4.828zM20 15V5H4v14L14 9l6 6zm0 2.828l-6-6L6.828 19H20v-1.172zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"></path></svg>
-   //     <p class="text-titlea1">Card title</p>
-   //     <p class="text-body22a1">Lorem Ipsum dolor sit amet</p>
-   //     <button class="card-buttona1">Read More</button>
-   //   </div>
-   // </div>
-
-   // <div class='col-sm-3 product' data-make='" + make + "' data-model='" + model + "' data-type='" + type + "' data-price='" + rawPrice + "'>
-   //     <div class='product-inner text-center'>
-   //         <a href='"+url+"'>
-   //             <img src='" + image + "'>
-   //         </a>
-   //         <br />Make: " + make + "<br />Model: " + model + "<br />Type: " + type + "<br />Price: " + price + "
-   //     </div>
-   // </div>
-
    products +=
-      "<div class='col-sm-2 cardca1 m-3 product' data-make='" +
-      make +
-      "' data-model='" +
-      model +
-      "' data-type='" +
-      type +
-      "' data-price='" +
-      rawPrice +
+      "<div class='col-sm-2 cardca1 product' data-country='" +
+      country +
+      "' data-island='" +
+      island +
+      "' data-city='" +
+      city +
+      "' data-name='" +
+      rawname +
       "'> <img class='card-imga1 ' style='width: 100%; height: 100%;' src='" +
       image +
       "'>   </a><br /> <div class='card-infoa1'> <p class='text-titlea1'> " +
-      price +
+      name +
       " </p> <p class='text-body22a1'>Lorem Ipsum dolor sit amet</p> <button class='card-buttona1'>Read More</button> </div> </div>";
 
-   // products += "<div class='col-sm-3 product' data-make='" + make + "' data-model='" + model + "' data-type='" + type + "' data-price='" + rawPrice + "'><div class='product-inner text-center'><a href='"+url+"'><img src='" + image + "'></a><br />Make: " + make + "<br />Model: " + model + "<br />Type: " + type + "<br />Price: " + price + "</div></div>";
 
-   //create dropdown of makes
+   //create dropdown of countrys
    if (
-      makes.indexOf("<option value='" + make + "'>" + make + '</option>') == -1
+      countrys.indexOf("<option value='" + country + "'>" + country + '</option>') == -1
    ) {
-      makes += "<option value='" + make + "'>" + make + '</option>';
+      countrys += "<option value='" + country + "'>" + country + '</option>';
    }
 
-   //create dropdown of models
+   //create dropdown of islands
    if (
-      models.indexOf("<option value='" + model + "'>" + model + '</option>') ==
+      islands.indexOf("<option value='" + island + "'>" + island + '</option>') ==
       -1
    ) {
-      models += "<option value='" + model + "'>" + model + '</option>';
+      islands += "<option value='" + island + "'>" + island + '</option>';
    }
 
-   //create dropdown of types
+   //create dropdown of citys
    if (
-      types.indexOf("<option value='" + type + "'>" + type + '</option>') == -1
+      citys.indexOf("<option value='" + city + "'>" + city + '</option>') == -1
    ) {
-      types += "<option value='" + type + "'>" + type + '</option>';
+      citys += "<option value='" + city + "'>" + city + '</option>';
    }
 }
 
 $('#products').html(products);
-$('.filter-make').append(makes);
-$('.filter-model').append(models);
-$('.filter-type').append(types);
+$('.filter-country').append(countrys);
+$('.filter-island').append(islands);
+$('.filter-city').append(citys);
 
 var filtersObject = {};
 
@@ -221,14 +195,14 @@ $('#search-form').submit(function (e) {
 
    $('.product').hide();
    $('.product').each(function () {
-      var make = $(this).data('make').toLowerCase(),
-         model = $(this).data('model').toLowerCase(),
-         type = $(this).data('type').toLowerCase();
+      var country = $(this).data('country').toLowerCase(),
+         island = $(this).data('island').toLowerCase(),
+         city = $(this).data('city').toLowerCase();
 
       if (
-         make.indexOf(query) > -1 ||
-         model.indexOf(query) > -1 ||
-         type.indexOf(query) > -1
+         country.indexOf(query) > -1 ||
+         island.indexOf(query) > -1 ||
+         city.indexOf(query) > -1
       ) {
          $(this).show();
       }
