@@ -141,7 +141,7 @@ for (var i = 0; i < data.length; i++) {
    // </div>
 
    products +=
-      "<div class='col-sm-2 cardca1 m-5 product' data-make='" +
+      "<div class='col-sm-2 cardca1 m-3 product' data-make='" +
       make +
       "' data-model='" +
       model +
