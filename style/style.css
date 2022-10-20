@@ -919,11 +919,11 @@ body {
 .cardca1 {
    width: 190px;
    height: 254px;
-   border-radius: 10px;
+   border-radius: 5px;
    padding: 1.9rem;
    background: #f5f5f5;
    position: relative;
-   border: 5px solid #a2d3e1;
+   border:5px solid #a2d3e1;
    display: flex;
    align-items: flex-end;
    transition: 0.4s ease-out;
