@@ -21,9 +21,10 @@ var data = [
    {
       country: 'Indonesia',
       island: 'Nusa Tenggara Barat',
-      city: 'Subang',
+      city: 'Lombok',
       name: 'Gili Trawangan',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318622514810931/10.png',
+      angka: '1',
       url: 'https://google.com',
    },
    {
@@ -32,6 +33,7 @@ var data = [
       city: 'Bukittinggi',
       name: 'Ngarai Sianok',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318622841962496/8.png',
+      angka: '2',
       url: 'https://google.com',
    },
    {
@@ -40,9 +42,11 @@ var data = [
       city: 'Makale',
       name: 'Toraja',
       image: 'https://cdn.discordapp.com/attachments/1027768625182027777/1032318623198498896/9.png',
+      angka: '3',
       url: 'https://google.com',
    },
    {
+      angka: '4',
       country: 'Indonesia',
       island: 'Nusa Tenggara Barat',
       city: 'Lombok',
@@ -51,6 +55,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '5',
       country: 'Indonesia',
       island: 'Sumatera',
       city: 'Medan',
@@ -59,6 +64,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '6',
       country: 'Indonesia',
       island: 'Nusa Tenggara Barat',
       city: 'Lombok',
@@ -67,6 +73,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '7',
       country: 'Indonesia',
       island: 'Jawa Timur',
       city: 'Acoustic',
@@ -75,6 +82,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '8',
       country: 'Indonesia',
       island: 'Nusa Tenggara Timur',
       city: 'Acoustic',
@@ -83,6 +91,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '9',
       country: 'Indonesia',
       island: 'Papua Barat',
       city: 'Acoustic',
@@ -91,6 +100,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '10',
       country: 'Indonesia',
       island: 'Bali',
       city: 'Acoustic',
@@ -100,14 +110,16 @@ var data = [
    },
    // 
    {
+      angka: '11',
       country: 'Indonesia',
-      island: 'Nusa Tenggara Barat.',
+      island: 'Nusa Tenggara Barat',
       city: 'Mataram',
       name: 'Pink Beach',
-      image: 'https://cdn.discordapp.com/attachments/1032636744237068328/1032637141450236024/13.png',
+      image: 'https://cdn.discordapp.com/attachments/1032636744237068328/1032887123407274014/DESAIN_GRAFIS_2.png',
       url: 'https://google.com',
    },
    {
+      angka: '12',
       country: 'Indonesia',
       island: 'Kepulauan Riau',
       city: 'Riau',
@@ -116,6 +128,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '13',
       country: 'Indonesia',
       island: 'Kepulauan Riau',
       city: 'Tanjung Pinang',
@@ -124,6 +137,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '14',
       country: 'Indonesia',
       island: 'Kepulauan Riau',
       city: 'Pulau Bintan',
@@ -132,6 +146,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '15',
       country: 'Indonesia',
       island: 'Kepulauan Riau',
       city: 'Pulau Bintan',
@@ -140,6 +155,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '16',
       country: 'Indonesia',
       island: 'Nusa Tenggara Barat',
       city: 'Lombok',
@@ -148,6 +164,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '17',
       country: 'Indonesia',
       island: 'Nusa Tenggara Barat',
       city: 'Lombok',
@@ -156,6 +173,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '18',
       country: 'Indonesia',
       island: 'Nusa Tenggara Barat',
       city: 'Lombok',
@@ -164,6 +182,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '19',
       country: 'Indonesia',
       island: 'Nusa Tenggara Timur',
       city: 'Pulau Komodo',
@@ -172,6 +191,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '20',
       country: 'Indonesia',
       island: 'Nusa Tenggara Timur',
       city: 'Flores',
@@ -180,6 +200,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '21',
       country: 'Indonesia',
       island: 'Nusa Tenggara Timur',
       city: 'Flores',
@@ -188,6 +209,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '22',
       country: 'Indonesia',
       island: 'Nusa Tenggara Timur',
       city: 'Flores',
@@ -196,6 +218,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '23',
       country: 'Indonesia',
       island: 'Nusa Tenggara Timur',
       city: 'Sumba',
@@ -204,14 +227,16 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '24',
       country: 'Indonesia',
       island: 'Sulawesi Utara',
       city: 'Manado',
       name: 'Pulau Manado Tua',
-      image: 'https://cdn.discordapp.com/attachments/1032636744237068328/1032637242201624596/24.png',
+      image: 'https://cdn.discordapp.com/attachments/1032636744237068328/1032915961172463638/DESAIN_GRAFIS_3.png',
       url: 'https://google.com',
    },
    {
+      angka: '25',
       country: 'Indonesia',
       island: 'Papua',
       city: 'Jayapura',
@@ -220,22 +245,25 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '26',
       country: 'Indonesia',
-      island: '',
-      city: '',
+      island: 'Jawa',
+      city: 'Magelang',
       name: 'Candi Borobudur',
       image: 'https://cdn.discordapp.com/attachments/1032636744237068328/1032637242885287996/26.png',
       url: 'https://google.com',
    },
    {
+      angka: '27',
       country: 'Indonesia',
       island: 'Jawa',
-      city: 'Magelang',
+      city: 'Klaten',
       name: 'Candi Prambanan',
       image: 'https://cdn.discordapp.com/attachments/1032636744237068328/1032637243229229117/27.png',
       url: 'https://google.com',
    },
    {
+      angka: '28',
       country: 'Indonesia',
       island: 'Gorontalo',
       city: 'Gorontalo',
@@ -244,6 +272,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '29',
       country: 'Indonesia',
       island: 'Jawa',
       city: 'Banten',
@@ -252,6 +281,7 @@ var data = [
       url: 'https://google.com',
    },
    {
+      angka: '30',
       country: 'Indonesia',
       island: 'Bali',
       city: 'Bali',
@@ -265,7 +295,9 @@ var data = [
 var products = '',
    countrys = '',
    islands = '',
-   citys = '';
+   citys = '',
+   angkas = '';
+   
 
 for (var i = 0; i < data.length; i++) {
    var country = data[i].country,
@@ -273,6 +305,7 @@ for (var i = 0; i < data.length; i++) {
       city = data[i].city,
       name = data[i].name,
       url = data[i].url,
+      angka = data[i].angka,
       rawname = name.replace('$', ''),
       rawname = parseInt(rawname.replace(',', '')),
       image = data[i].image;
@@ -286,12 +319,15 @@ for (var i = 0; i < data.length; i++) {
       city +
       "' data-name='" +
       rawname +
+      "' data-angka='" +
+      angka +
       "'> <img class='card-imga1 ' style='width: 100%; height: 100%;' src='" +
       image +
       "'>   </a><br /> <div class='card-infoa1'> <p class='text-titlea1'> " +
       name +
-      " </p> <p class='text-body22a1'>Lorem Ipsum dolor sit amet</p> <button class='card-buttona1'>Read More</button> </div> </div>";
-
+      " </p> <button class='buttonns2' type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasBottom" +
+      angka +
+      "' aria-controls='offcanvasBottom'>Read More</button> </div> </div>";
 
    //create dropdown of countrys
    if (
@@ -370,3 +406,84 @@ $('#search-form').submit(function (e) {
       }
    });
 });
+
+
+
+const reviews = [
+   {
+     id: 1,
+     name: "Thoriq",
+     job: "Web Developer",
+     img:"https://cdn.discordapp.com/attachments/1032636744237068328/1032933065254785045/girlprof.png",
+     text:"Known as the party island, is the most developed of the three gilis and also offers great snorkeling/diving spots. You can get almost everything here. Nice accomodation, chill vibes, bars, delicious foods, and of course party. Backpacker friendly, you can find cheap accomodation here from around IDR 100.000/night"
+   },
+   {
+     id: 2,
+     name: "Willy",
+     job: "Designer",
+     img:"https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png",
+     text:"This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter"
+   },
+   {
+     id: 3,
+     name: "Raffi",
+     job: "Traveller",
+     img:"https://cdn.discordapp.com/attachments/1032636744237068328/1032933065254785045/girlprof.png",
+     text:"The most touristic place we visited in Indonesia. If you are above forty you will feel rather old. We went around the island by bicycle and it was nice. Beaches are beautiful. We tried to find turtles but it seemed hopeless."
+   },
+   {
+     id: 4,
+     name: "David",
+     job: "Investor",
+     img:"https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png",
+     text:"What's not to love about this island. They call this the party island out of the 3 Gili islands, Gili-trawangan, Gili Air, Gili Meno. An escape from Bali mainland. Quicker to the islands from Lombok if you are in Lombok."
+   }
+ ];
+ 
+ const img = document.getElementById("person-imgreview");
+ const author = document.getElementById("authorreview");
+ const job = document.getElementById("jobreview");
+ const info = document.getElementById("inforeview");
+ 
+ const prevBtn = document.querySelector(".prev-btn");
+ const nextBtn = document.querySelector(".next-btn");
+ 
+ let currentItem = 0;
+ 
+ // load initial item
+ window.addEventListener("DOMContentLoaded", () => {
+   const item = reviews[currentItem];
+   img.src = item.img;
+   author.textContent = item.name;
+   job.textContent = item.job;
+   info.textContent = item.text;
+ });
+ 
+ // show person based on item
+ function showPerson(person) {
+   const item = reviews[person];
+   img.src = item.img;
+   author.textContent = item.name;
+   job.textContent = item.job;
+   info.textContent = item.text;
+ }
+ 
+ // show next person
+ nextBtn.addEventListener("click", () => {
+   currentItem++;
+   if (currentItem > reviews.length - 1) {
+     currentItem = 0;
+   }
+   showPerson(currentItem);
+ });
+ 
+ // show prev person
+ prevBtn.addEventListener("click", () => {
+   currentItem--;
+   if (currentItem < 0) {
+     currentItem = reviews.length - 1;
+   }
+   showPerson(currentItem);
+ });
+ 
+ 

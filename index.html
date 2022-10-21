@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LetRo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="style.css">
+
   <!-- Link CSS Ext -->
   <link rel="stylesheet" href="./style/style.css">
   <!-- BOOTSTRAP -->
@@ -24,7 +26,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand text-light ms-5 fs-2 judul" href="#">LetRo</a>
+      <a class="navbar-brand text-light ms-5 fs-2 judul" href="#" style="font-family: 'Sriracha', cursive;">LetRo</a>
 
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -34,16 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
           <li class="nav-item cta">
-            <a class="nav-link active text-light fs-5 hover-underline-animation" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-light fs-5 hover-underline-animation" aria-current="page" href="#" style="font-family: 'Sriracha', cursive;">Home</a>
           </li>
           <li class="nav-item cta">
-            <a class="nav-link text-light fs-5 hover-underline-animation" href="#TTD">Things To Do</a>
+            <a class="nav-link text-light fs-5 hover-underline-animation" href="#TTD" style="font-family: 'Sriracha', cursive;">Things To Do</a>
           </li>
           <li class="nav-item cta">
-            <a class="nav-link text-light fs-5 hover-underline-animation" href="#PTR">Plan Trip</a>
+            <a class="nav-link text-light fs-5 hover-underline-animation" href="#PTR" style="font-family: 'Sriracha', cursive;">Plan Trip</a>
           </li>
           <li class="nav-item cta">
-            <a class="nav-link text-light fs-5 hover-underline-animation" href="#SD">Search Destination</a>
+            <a class="nav-link text-light fs-5 hover-underline-animation" href="#SD" style="font-family: 'Sriracha', cursive;">Search Destination</a>
           </li>
         </ul>
 
@@ -52,7 +54,7 @@
   </nav>
 
   <div class="box">
-    <p class="judul" align="center"> <b>Lets Rove</b><br><br>LetRo</p>
+    <p class="judul" align="center"> <b>Lets Rove</b> <img class="" src="./img/walet.png" width="90%" alt="" srcset=""> </p>
   </div>
 
 
@@ -160,7 +162,7 @@
             <div class="cardi1 m-auto">
               <h3 class="card__titlei1">Search Destination
               </h3>
-              <p class="card__contenti1">Before going on a trip you can do a search for the place you want to go first <br> <br>
+              <p class="card__contenti1">you can do a search of the place you want to go <br> first
               </p>
               <div class="card__arrowi1">
                 <a href="#SD" class="btn stretched-link">
@@ -186,10 +188,10 @@
       <h1 align="center" style="font-family: 'Sriracha', cursive; font-size: 5em;"> Things To Do </h1>
 
       <div class="container card1 mt-5">
-        <p class="accordion-header" id="headingOne">
+        <p class="accordion-header" id="headingOne" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 
-          <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <span class="collapsed hover-underline-animation01" type="button" >
             <button class="cta11">
               <span class="hover-underline-animation11"> SET DESTINATION </span>
               <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
@@ -201,10 +203,10 @@
           </span>
 
         </p>
-        <p class="accordion-header" id="flush-headingTwo">
+        <p class="accordion-header" id="flush-headingTwo" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 
-          <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <span class="collapsed hover-underline-animation01" type="button" >
             <button class="cta11">
               <span class="hover-underline-animation11"> FIT AND HEALTHY </span>
               <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
@@ -216,10 +218,10 @@
           </span>
 
         </p>
-        <p class="accordion-header" id="flush-headingThree">
+        <p class="accordion-header" id="flush-headingThree" data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 
-          <span class="collapsed hover-underline-animation01" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <span class="collapsed hover-underline-animation01" type="button" >
             <button class="cta11">
               <span class="hover-underline-animation11"> NECESSARY ITEMS </span>
               <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
@@ -526,7 +528,28 @@
           <div class="card01">
             <img src="./img/Review.png" width="100%" alt="">
             <p class="text-title01" align="center">Travel Review</p>
-            <button class="card-button01">More info</button>
+            <button class="card-button01" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More info</button>
+
+            <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog ">
+                <div class="modal-content text-bg-dark">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="staticBackdropLabel">Travel Review</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    To see a review of a trip, you must first search for a destination in the destination search feature
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#SD">
+                    <button type="button" class="btn" style="background-color: #A6D6E3;">Go Search Destination</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -535,7 +558,28 @@
           <div class="card01">
             <img src="./img/Price.png" width="100%" alt="">
             <p class="text-title01" align="center">Travel Price</p>
-            <button class="card-button01">More info</button>
+            <button class="card-button01" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">More info</button>
+
+            <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+              <div class="modal-dialog ">
+                <div class="modal-content text-bg-dark">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="staticBackdropLabel1">Travel Price</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    To see a Travel Price, you must first search for a destination in the destination search feature
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#SD">
+                    <button type="button" class="btn" style="background-color: #A6D6E3;">Go Search Destination</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -572,14 +616,12 @@
   </svg>
 
   <div class="container" id="SD">
+
+  
+
     <div style="padding-bottom: 50px; padding-top: 100px;">
       <h1 align="center" class="text-dark" style="font-family: 'Sriracha', cursive; font-size: 7em;"> Search Destination
       </h1>
-
-      <!-- <div class="container" style="outline: dashed 1px black;">
-        <div class="child" style="width: 50px; height: 50px; background-color: red; /* Center horizontally*/ margin: 0 auto;">
-        </div>
-      </div> -->
 
       <form id="search-form" action="" method="POST" enctype="multipart/form-data" class="">
         <div class="inputbox m-auto w-50">
@@ -594,27 +636,21 @@
       <div class="container mt-3">
         <form action="" class="pb-4">
           <div class="row d-flex w-50 m-auto">
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
               <select data-filter="country" class="filter-country filter form-control">
                 <option value="">Choose Country</option>
                 <option value="">Show All</option>
               </select>
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
               <select data-filter="island" class="filter-island filter form-control">
                 <option value="">Choose Island</option>
                 <option value="">Show All</option>
               </select>
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
               <select data-filter="city" class="filter-city filter form-control">
                 <option value="">Choose City</option>
-                <option value="">Show All</option>
-              </select>
-            </div>
-            <div class="form-group col-md-3">
-              <select data-filter="name" class="filter-name filter form-control">
-                <option value="">Select Price Range</option>
                 <option value="">Show All</option>
               </select>
             </div>
@@ -624,6 +660,1261 @@
         <div class="row" id="products">
 
         </div>
+
+        <!-- Offcanvas Destinasi -->
+        <!-- 1 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom1" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Gili Trawangan</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032907252320960552/623436cab9f4e.jpg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Gili Trawangan is the largest of the three small islands or dyke in the northwest of Lombok. Trawangan is also the only dyke whose height above sea level is quite significant. With a length of 3 km and a width of 2 km, Trawangan has a population of about 800 people. Among the three dykes, Trawangan has the most diverse facilities for tourists; the tavern "Tîr na Nôg" claims that Trawangan is the smallest island in the world with an Irish bar. The most densely populated part is the east of the island.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032925453842927688/GOPR4908-Copy.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">sara jones</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                          asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                          Iste, doloremque nihil?
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom3" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom4" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom5" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom6" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom7" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom8" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom9" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="offcanvas offcanvas-bottom h-100 text-bg-dark" tabindex="-1" id="offcanvasBottom10" aria-labelledby="offcanvasBottomLabel" id="offcanvs">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title m-auto" id="offcanvasBottomLabel" style="font-family: 'Sriracha', cursive; color: #27826C;">Ngarai Sianok</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: #A6D6E3;"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <section>
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">DESCRIPTION</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950597952999434/62f1db03c7704.jpeg" class="d-block w-75" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-5 text-light" style="text-align: justify;">
+                        Ngarai Sianok is a steep valley (ravine) located on the border of Bukittinggi City, in District IV Koto, Agam Regency, West Sumatra. This valley is elongated and winding as the city boundary line from the south of the Koto Gadang canyon to the Sianok Anam Suku village, and ends in Palupuh District. Sianok canyon has a very beautiful view and is also one of the mainstay tourist attractions in the province.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 pb-5">
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">TRAVEL PRICE</h2>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <p class="fs-4 text-light" align="center" style="color: white;">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">PEOPLE</th>
+                              <th scope="col">HOTEL</th>
+                              <th scope="col">TRANSPORT</th>
+                              <th scope="col">DURATION</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rp2.330.000</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Rp2.650.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Rp2.330.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                            <tr>
+                              <td>6 - 10</td>
+                              <td>Rp2.140.000 / People</td>
+                              <td>Rp1.000.000 - Rp2.000.000</td>
+                              <td>5 Day</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032950598204669993/094814500_1482128249-095165600_1454230277-1.jpg" class="d-block w-75" style="margin-left: 25%;" alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div>
+                <div class="container">
+                  <h2 class="text-center marg-judul" style="font-family: 'Sriracha', cursive; color: #A6D6E3;">REVIEW</h2>
+                  <main class="mainreview">
+                    <section class="containerreview">
+                      <article class="reviewreview">
+                        <div class="img-containerreview">
+                          <img src="https://cdn.discordapp.com/attachments/1032636744237068328/1032933065602891878/manprof.png" alt="" id="person-imgreview" class="imgreview" />
+                        </div>
+                        <h4 id="authorreview">Arthurito</h4>
+                        <p id="jobreview">ux designer</p>
+                        <p id="inforeview">
+                          This island is beautiful, no cars no motorcycles, so everyone just walking or use bicyle and horse wagon. Many foreigner tourists than local, this island is similar to Bali, but a lil bit quiter
+                        </p>
+                        <div class="button-containerreview">
+                          <button class="prev-btn btnreview">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn btnreview">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                      </article>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              
+            </section>
+
+          </div>
+        </div>
+
+        <!-- End Offcanvas Destinasi -->
       </div>
     </div>
 
@@ -649,17 +1940,15 @@
           <div class="col-sm-6 col-md-3 item">
             <h3>Services</h3>
             <ul>
-              <li><a href="#">Web design</a></li>
-              <li><a href="#">Development</a></li>
               <li><a href="#">Tourist</a></li>
+              <li><a href="#PTR">Plan Trip</a></li>
+              <li><a href="#SD">Search Destination</a></li>
             </ul>
           </div>
           <div class="col-sm-6 col-md-3 item">
             <h3>About</h3>
             <ul>
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="#LMD">Website</a></li>
             </ul>
           </div>
           <div class="col-md-6 item text">
@@ -667,7 +1956,7 @@
             <p>LetRo is a website dedicated to travel, This site discusses travel reviews, travel pricing details.</p>
           </div>
           <div class="col item social">
-            <a href="#">
+            <a href="https://www.facebook.com/cristianto.arthurito/" target="_blank">
               <i class="icon ion-social-facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
                   class="bi bi-facebook" viewBox="0 0 20 20">
@@ -676,14 +1965,14 @@
                 </svg>
               </i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/xcrisarthur/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-instagram"
                 viewBox="0 0 20 20">
                 <path
                   d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
               </svg>
             </a>
-            <a href="#">
+            <a href="http://wa.me/6281339975260" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-whatsapp"
                 viewBox="0 0 20 20">
                 <path
